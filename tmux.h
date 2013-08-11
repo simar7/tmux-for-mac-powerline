@@ -42,6 +42,8 @@ extern char   **environ;
 /* Default prompt history length. */
 #define PROMPT_HISTORY 100
 
+#define BUFSIZ 2048
+
 /*
  * Minimum layout cell size, NOT including separator line. The scroll region
  * cannot be one line in height so this must be at least two.
@@ -57,7 +59,7 @@ extern char   **environ;
  */
 #define COMMAND_LENGTH 2048	/* packed argv size */
 #define TERMINAL_LENGTH 128	/* length of TERM environment variable */
-#define ENVIRON_LENGTH 1024	/* environment variable length */
+#define ENVIRON_LENGTH 2048	/* environment variable length */
 
 /*
  * UTF-8 data size. This must be big enough to hold combined characters as well
